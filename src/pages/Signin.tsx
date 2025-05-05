@@ -43,6 +43,7 @@ export default function Signin() {
             label="E-mail"
             labelPlacement="outside"
             {...register("email")}
+            value={"amir.seraj6990@gmail.com"}
             placeholder="Enter your email"
             type="text"
           />
@@ -53,6 +54,7 @@ export default function Signin() {
             label="Passord"
             labelPlacement="outside"
             {...register("password")}
+            value={"123456789"}
             placeholder="Enter your password"
             type="password"
           />

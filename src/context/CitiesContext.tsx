@@ -55,10 +55,12 @@ const CityProvider = ({ children }: { children: React.ReactNode }) => {
     initialState
   );
 
+  // http://localhost:8000/cities
+
   const handleFetchCities = async () => {
     dispatch({ type: "loading" });
     try {
-      const response = await fetch("http://localhost:8000/cities", {
+      const response = await fetch("/cities.json", {
         method: "GET"
       });
       if (!response.ok) {

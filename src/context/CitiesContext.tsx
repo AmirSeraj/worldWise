@@ -60,7 +60,7 @@ const CityProvider = ({ children }: { children: React.ReactNode }) => {
   const handleFetchCities = async () => {
     dispatch({ type: "loading" });
     try {
-      const response = await fetch("/cities.json", {
+      const response = await fetch("http://localhost:8000/cities", {
         method: "GET"
       });
       if (!response.ok) {
